@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9E350CE13D22F7500FE69E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E350CD13D22F7500FE69E3 /* UIKit.framework */; };
+		C9E350D013D22F7500FE69E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E350CF13D22F7500FE69E3 /* Foundation.framework */; };
+		C9E350D213D22F7500FE69E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E350D113D22F7500FE69E3 /* CoreGraphics.framework */; };
+		C9E350D813D22F7500FE69E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9E350D613D22F7500FE69E3 /* InfoPlist.strings */; };
+		C9E350DB13D22F7500FE69E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E350DA13D22F7500FE69E3 /* main.m */; };
+		C9E350DE13D22F7500FE69E3 /* SwatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E350DD13D22F7500FE69E3 /* SwatAppDelegate.m */; };
+		C9E350E113D22F7500FE69E3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E350DF13D22F7500FE69E3 /* MainWindow.xib */; };
+		C9E350E413D22F7500FE69E3 /* SwatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E350E313D22F7500FE69E3 /* SwatViewController.m */; };
+		C9E350E713D22F7500FE69E3 /* SwatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E350E513D22F7500FE69E3 /* SwatViewController.xib */; };
+		C9E350EE13D22F7500FE69E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E350CD13D22F7500FE69E3 /* UIKit.framework */; };
+		C9E350EF13D22F7500FE69E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E350CF13D22F7500FE69E3 /* Foundation.framework */; };
+		C9E350F013D22F7500FE69E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E350D113D22F7500FE69E3 /* CoreGraphics.framework */; };
+		C9E350F813D22F7500FE69E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9E350F613D22F7500FE69E3 /* InfoPlist.strings */; };
+		C9E350FB13D22F7500FE69E3 /* SwatTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C9E350FA13D22F7500FE69E3 /* SwatTests.h */; };
+		C9E350FD13D22F7500FE69E3 /* SwatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E350FC13D22F7500FE69E3 /* SwatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9E350F113D22F7500FE69E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9E350C013D22F7500FE69E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E350C813D22F7500FE69E3;
+			remoteInfo = Swat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9E350C913D22F7500FE69E3 /* Swat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E350CD13D22F7500FE69E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9E350CF13D22F7500FE69E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9E350D113D22F7500FE69E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9E350D513D22F7500FE69E3 /* Swat-Info.plist */ = {isa = PBXFileReference; path = "Swat-Info.plist"; sourceTree = "<group>"; };
+		C9E350D713D22F7500FE69E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9E350D913D22F7500FE69E3 /* Swat-Prefix.pch */ = {isa = PBXFileReference; path = "Swat-Prefix.pch"; sourceTree = "<group>"; };
+		C9E350DA13D22F7500FE69E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9E350DC13D22F7500FE69E3 /* SwatAppDelegate.h */ = {isa = PBXFileReference; path = SwatAppDelegate.h; sourceTree = "<group>"; };
+		C9E350DD13D22F7500FE69E3 /* SwatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwatAppDelegate.m; sourceTree = "<group>"; };
+		C9E350E013D22F7500FE69E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C9E350E213D22F7500FE69E3 /* SwatViewController.h */ = {isa = PBXFileReference; path = SwatViewController.h; sourceTree = "<group>"; };
+		C9E350E313D22F7500FE69E3 /* SwatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwatViewController.m; sourceTree = "<group>"; };
+		C9E350E613D22F7500FE69E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SwatViewController.xib; sourceTree = "<group>"; };
+		C9E350ED13D22F7500FE69E3 /* SwatTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwatTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E350F513D22F7500FE69E3 /* SwatTests-Info.plist */ = {isa = PBXFileReference; path = "SwatTests-Info.plist"; sourceTree = "<group>"; };
+		C9E350F713D22F7500FE69E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9E350F913D22F7500FE69E3 /* SwatTests-Prefix.pch */ = {isa = PBXFileReference; path = "SwatTests-Prefix.pch"; sourceTree = "<group>"; };
+		C9E350FA13D22F7500FE69E3 /* SwatTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwatTests.h; sourceTree = "<group>"; };
+		C9E350FC13D22F7500FE69E3 /* SwatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9E350C613D22F7500FE69E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E350CE13D22F7500FE69E3 /* UIKit.framework in Frameworks */,
+				C9E350D013D22F7500FE69E3 /* Foundation.framework in Frameworks */,
+				C9E350D213D22F7500FE69E3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E350E913D22F7500FE69E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E350EE13D22F7500FE69E3 /* UIKit.framework in Frameworks */,
+				C9E350EF13D22F7500FE69E3 /* Foundation.framework in Frameworks */,
+				C9E350F013D22F7500FE69E3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9E350BE13D22F7500FE69E3 = {
+			isa = PBXGroup;
+			children = (
+				C9E350D313D22F7500FE69E3 /* Swat */,
+				C9E350F313D22F7500FE69E3 /* SwatTests */,
+				C9E350CC13D22F7500FE69E3 /* Frameworks */,
+				C9E350CA13D22F7500FE69E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9E350CA13D22F7500FE69E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9E350C913D22F7500FE69E3 /* Swat.app */,
+				C9E350ED13D22F7500FE69E3 /* SwatTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9E350CC13D22F7500FE69E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9E350CD13D22F7500FE69E3 /* UIKit.framework */,
+				C9E350CF13D22F7500FE69E3 /* Foundation.framework */,
+				C9E350D113D22F7500FE69E3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9E350D313D22F7500FE69E3 /* Swat */ = {
+			isa = PBXGroup;
+			children = (
+				C9E350DC13D22F7500FE69E3 /* SwatAppDelegate.h */,
+				C9E350DD13D22F7500FE69E3 /* SwatAppDelegate.m */,
+				C9E350DF13D22F7500FE69E3 /* MainWindow.xib */,
+				C9E350E213D22F7500FE69E3 /* SwatViewController.h */,
+				C9E350E313D22F7500FE69E3 /* SwatViewController.m */,
+				C9E350E513D22F7500FE69E3 /* SwatViewController.xib */,
+				C9E350D413D22F7500FE69E3 /* Supporting Files */,
+			);
+			path = Swat;
+			sourceTree = "<group>";
+		};
+		C9E350D413D22F7500FE69E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9E350D513D22F7500FE69E3 /* Swat-Info.plist */,
+				C9E350D613D22F7500FE69E3 /* InfoPlist.strings */,
+				C9E350D913D22F7500FE69E3 /* Swat-Prefix.pch */,
+				C9E350DA13D22F7500FE69E3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9E350F313D22F7500FE69E3 /* SwatTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9E350FA13D22F7500FE69E3 /* SwatTests.h */,
+				C9E350FC13D22F7500FE69E3 /* SwatTests.m */,
+				C9E350F413D22F7500FE69E3 /* Supporting Files */,
+			);
+			path = SwatTests;
+			sourceTree = "<group>";
+		};
+		C9E350F413D22F7500FE69E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9E350F513D22F7500FE69E3 /* SwatTests-Info.plist */,
+				C9E350F613D22F7500FE69E3 /* InfoPlist.strings */,
+				C9E350F913D22F7500FE69E3 /* SwatTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9E350C813D22F7500FE69E3 /* Swat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E3510013D22F7500FE69E3 /* Build configuration list for PBXNativeTarget "Swat" */;
+			buildPhases = (
+				C9E350C513D22F7500FE69E3 /* Sources */,
+				C9E350C613D22F7500FE69E3 /* Frameworks */,
+				C9E350C713D22F7500FE69E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swat;
+			productName = Swat;
+			productReference = C9E350C913D22F7500FE69E3 /* Swat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9E350EC13D22F7500FE69E3 /* SwatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E3510313D22F7500FE69E3 /* Build configuration list for PBXNativeTarget "SwatTests" */;
+			buildPhases = (
+				C9E350E813D22F7500FE69E3 /* Sources */,
+				C9E350E913D22F7500FE69E3 /* Frameworks */,
+				C9E350EA13D22F7500FE69E3 /* Resources */,
+				C9E350EB13D22F7500FE69E3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9E350F213D22F7500FE69E3 /* PBXTargetDependency */,
+			);
+			name = SwatTests;
+			productName = SwatTests;
+			productReference = C9E350ED13D22F7500FE69E3 /* SwatTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9E350C013D22F7500FE69E3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C9E350C313D22F7500FE69E3 /* Build configuration list for PBXProject "Swat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9E350BE13D22F7500FE69E3;
+			productRefGroup = C9E350CA13D22F7500FE69E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9E350C813D22F7500FE69E3 /* Swat */,
+				C9E350EC13D22F7500FE69E3 /* SwatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9E350C713D22F7500FE69E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E350D813D22F7500FE69E3 /* InfoPlist.strings in Resources */,
+				C9E350E113D22F7500FE69E3 /* MainWindow.xib in Resources */,
+				C9E350E713D22F7500FE69E3 /* SwatViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E350EA13D22F7500FE69E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E350F813D22F7500FE69E3 /* InfoPlist.strings in Resources */,
+				C9E350FB13D22F7500FE69E3 /* SwatTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9E350EB13D22F7500FE69E3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9E350C513D22F7500FE69E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E350DB13D22F7500FE69E3 /* main.m in Sources */,
+				C9E350DE13D22F7500FE69E3 /* SwatAppDelegate.m in Sources */,
+				C9E350E413D22F7500FE69E3 /* SwatViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E350E813D22F7500FE69E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E350FD13D22F7500FE69E3 /* SwatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9E350F213D22F7500FE69E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E350C813D22F7500FE69E3 /* Swat */;
+			targetProxy = C9E350F113D22F7500FE69E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9E350D613D22F7500FE69E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E350D713D22F7500FE69E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9E350DF13D22F7500FE69E3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E350E013D22F7500FE69E3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C9E350E513D22F7500FE69E3 /* SwatViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E350E613D22F7500FE69E3 /* en */,
+			);
+			name = SwatViewController.xib;
+			sourceTree = "<group>";
+		};
+		C9E350F613D22F7500FE69E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E350F713D22F7500FE69E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9E350FE13D22F7500FE69E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9E350FF13D22F7500FE69E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C9E3510113D22F7500FE69E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swat/Swat-Prefix.pch";
+				INFOPLIST_FILE = "Swat/Swat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9E3510213D22F7500FE69E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swat/Swat-Prefix.pch";
+				INFOPLIST_FILE = "Swat/Swat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C9E3510413D22F7500FE69E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swat.app/Swat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwatTests/SwatTests-Prefix.pch";
+				INFOPLIST_FILE = "SwatTests/SwatTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C9E3510513D22F7500FE69E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swat.app/Swat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwatTests/SwatTests-Prefix.pch";
+				INFOPLIST_FILE = "SwatTests/SwatTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9E350C313D22F7500FE69E3 /* Build configuration list for PBXProject "Swat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E350FE13D22F7500FE69E3 /* Debug */,
+				C9E350FF13D22F7500FE69E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E3510013D22F7500FE69E3 /* Build configuration list for PBXNativeTarget "Swat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E3510113D22F7500FE69E3 /* Debug */,
+				C9E3510213D22F7500FE69E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9E3510313D22F7500FE69E3 /* Build configuration list for PBXNativeTarget "SwatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E3510413D22F7500FE69E3 /* Debug */,
+				C9E3510513D22F7500FE69E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9E350C013D22F7500FE69E3 /* Project object */;
+}
