@@ -48,6 +48,7 @@
 		C9E3512413D23C0C00FE69E3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E3511C13D23C0C00FE69E3 /* ImageIO.framework */; };
 		C9E3512713D23E1F00FE69E3 /* FrameProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9E3512613D23E1F00FE69E3 /* FrameProcessor.mm */; };
 		C9E3513913D262AA00FE69E3 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E3513813D262AA00FE69E3 /* star.png */; };
+		EE898D2113D3823600C9D4D3 /* MoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE898D2013D3823600C9D4D3 /* MoveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,8 @@
 		C9E3512513D23E1E00FE69E3 /* FrameProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameProcessor.h; sourceTree = "<group>"; };
 		C9E3512613D23E1F00FE69E3 /* FrameProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FrameProcessor.mm; sourceTree = "<group>"; };
 		C9E3513813D262AA00FE69E3 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		EE898D1F13D3823600C9D4D3 /* MoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
+		EE898D2013D3823600C9D4D3 /* MoveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +411,8 @@
 				C9E3510C13D236E400FE69E3 /* AVCamUtilities.h */,
 				C9E3510D13D236E400FE69E3 /* AVCamUtilities.m */,
 				C9E350DF13D22F7500FE69E3 /* MainWindow.xib */,
+				EE898D1F13D3823600C9D4D3 /* MoveView.h */,
+				EE898D2013D3823600C9D4D3 /* MoveView.m */,
 				C9E350E213D22F7500FE69E3 /* SwatViewController.h */,
 				C9E350E313D22F7500FE69E3 /* SwatViewController.m */,
 				C9E350E513D22F7500FE69E3 /* SwatViewController.xib */,
@@ -560,6 +565,7 @@
 				C9E3510B13D2315700FE69E3 /* AVCamCaptureManager.m in Sources */,
 				C9E3510E13D236E400FE69E3 /* AVCamUtilities.m in Sources */,
 				C9E3512713D23E1F00FE69E3 /* FrameProcessor.mm in Sources */,
+				EE898D2113D3823600C9D4D3 /* MoveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
