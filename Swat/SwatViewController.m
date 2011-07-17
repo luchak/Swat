@@ -134,7 +134,7 @@
 	view.backgroundColor = [UIColor colorWithRed:[self getRandIntBetwMin:0 andMax:100]/100.0 green:[self getRandIntBetwMin:0 andMax:100]/100.0 blue:[self getRandIntBetwMin:0 andMax:100]/100.0 alpha:[self getRandIntBetwMin:80 andMax:100]/100.0];
 	
 	CGFloat centerX, centerY, dX, dY;
-	switch (arc4random() % 4) {
+	switch (arc4random() % 6) {
 		case 0:	// from Left
 			centerX = -MAX_SIZE;
 			centerY = [self getRandIntBetwMin:MAX_SIZE andMax:[UIScreen mainScreen].bounds.size.height - MAX_SIZE];
@@ -158,6 +158,20 @@
 			break;
 			
 		case 3:	// from Down
+			centerX = [self getRandIntBetwMin:MAX_SIZE andMax:[UIScreen mainScreen].bounds.size.width - MAX_SIZE];
+			centerY = [UIScreen mainScreen].bounds.size.height + MAX_SIZE;
+			dX = 0;
+			dY = -DY;
+			break;
+			
+		case 4:	// from Up
+			centerX = [self getRandIntBetwMin:MAX_SIZE andMax:[UIScreen mainScreen].bounds.size.width - MAX_SIZE];
+			centerY = -MAX_SIZE;
+			dX = 0;
+			dY = DY;
+			break;
+			
+		case 5:	// from Down
 			centerX = [self getRandIntBetwMin:MAX_SIZE andMax:[UIScreen mainScreen].bounds.size.width - MAX_SIZE];
 			centerY = [UIScreen mainScreen].bounds.size.height + MAX_SIZE;
 			dX = 0;
