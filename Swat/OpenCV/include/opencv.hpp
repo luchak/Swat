@@ -52,7 +52,6 @@
 #include "video/background_segm.hpp"
 #include "features2d/features2d.hpp"
 #include "objdetect/objdetect.hpp"
-#include "calib3d/calib3d.hpp"
 #include "ml/ml.hpp"
 #include "contrib/contrib.hpp"
 
