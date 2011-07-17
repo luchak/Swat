@@ -252,7 +252,6 @@
 					break;
 			}
 			
-			NSLog(@"Changed view at %@", [NSValue valueWithCGPoint:view.center]);
 		} else {
 			[removers addObject:view];
 		}
