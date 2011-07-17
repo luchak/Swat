@@ -15,6 +15,7 @@
 @interface FrameProcessor : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate> {
     float left_accum;
     float right_accum;
+    int suppress_counter;
 }
 
 @property (nonatomic,retain) UIImage *frameImage;

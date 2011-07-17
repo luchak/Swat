@@ -333,23 +333,38 @@
         dx[i] = corners_new[i].x - corners_old[i].x;
     }
     std::sort(dx.begin(), dx.end());
-    float left = dx[0];
-    float right = dx[dx.size() - 1];
     
-    left = std::max(left, 0.0f);
-    right = fabs(std::min(right, 0.0f));
+    float left = fabs(std::min(dx[0], 0.0f));
+    float right = std::max(dx[dx.size() - 1], 0.0f);
     
+    const int suppress_frames = 5;
     const float kGamma = 0.7;
-    const float kThreshold = 0.1;
+    const float kThreshold = 1.0;
+    const float kRatio = 2.0;
     float new_left_accum = left_accum * kGamma + left * (1.0 - kGamma);
     float new_right_accum = right_accum * kGamma + right * (1.0 - kGamma);
     
-    NSLog(@"%f %f %f %f", left, right, new_left_accum, new_right_accum);
-    if (left_accum > kThreshold && new_left_accum <= kThreshold) {
-        NSLog(@"left!");
+    bool trig_left = false;
+    bool trig_right = false;
+    if (suppress_counter == 0) {
+        if (new_left_accum > kThreshold && left_accum <= kThreshold) {
+            trig_left = true;
+            suppress_counter = suppress_frames;
+        }
+        if (new_right_accum > kThreshold && right_accum <= kThreshold) {
+            trig_right = true;
+            suppress_counter = suppress_frames;
+        }
+    } else {
+        suppress_counter -= 1;
     }
-    if (right_accum > kThreshold && new_right_accum <= kThreshold) {
+    
+    if (trig_left && (!trig_right || (new_left_accum > new_right_accum))) {
+        NSLog(@"left!");
+        NSLog(@"%f %f :: %f %f", left_accum, new_left_accum, right_accum, new_right_accum);
+    } else if (trig_right && (!trig_left || (new_right_accum >= new_left_accum))) {
         NSLog(@"right!");
+        NSLog(@"%f %f :: %f %f", left_accum, new_left_accum, right_accum, new_right_accum);
     }
     
     left_accum = new_left_accum;
