@@ -2,6 +2,10 @@
 // Prefix header for all source files of the 'Swat' target in the 'Swat' project
 //
 
+#ifdef __cplusplus
+#import "OpenCV/include/opencv.hpp"
+#endif
+
 #import <Availability.h>
 
 #ifndef __IPHONE_3_0
@@ -12,3 +16,4 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
