@@ -66,7 +66,9 @@
     [[captureManager videoDataOutput] setSampleBufferDelegate:frameProcessor queue:queue];
     dispatch_release(queue);
     
-    
+    // OLD view
+//    [self setImageView: [[UIImageView alloc] initWithFrame: [self.view bounds]]];
+//    [self.view addSubview:imageView];
 	
 	
 	self.views = [NSMutableArray array];
