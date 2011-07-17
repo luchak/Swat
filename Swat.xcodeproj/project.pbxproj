@@ -49,6 +49,43 @@
 		C9E3512713D23E1F00FE69E3 /* FrameProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9E3512613D23E1F00FE69E3 /* FrameProcessor.mm */; };
 		C9E3513913D262AA00FE69E3 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E3513813D262AA00FE69E3 /* star.png */; };
 		EE898D2113D3823600C9D4D3 /* MoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE898D2013D3823600C9D4D3 /* MoveView.m */; };
+		EED46EDD13D38B8E00660740 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E350DA13D22F7500FE69E3 /* main.m */; };
+		EED46EDE13D38B8E00660740 /* SwatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E350DD13D22F7500FE69E3 /* SwatAppDelegate.m */; };
+		EED46EDF13D38B8E00660740 /* SwatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E350E313D22F7500FE69E3 /* SwatViewController.m */; };
+		EED46EE013D38B8E00660740 /* AVCamCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E3510A13D2315700FE69E3 /* AVCamCaptureManager.m */; };
+		EED46EE113D38B8E00660740 /* AVCamUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E3510D13D236E400FE69E3 /* AVCamUtilities.m */; };
+		EED46EE213D38B8E00660740 /* FrameProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9E3512613D23E1F00FE69E3 /* FrameProcessor.mm */; };
+		EED46EE313D38B8E00660740 /* MoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE898D2013D3823600C9D4D3 /* MoveView.m */; };
+		EED46EE513D38B8E00660740 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EB4D13D3595200F73A5D /* Accelerate.framework */; };
+		EED46EE613D38B8E00660740 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E350CD13D22F7500FE69E3 /* UIKit.framework */; };
+		EED46EE713D38B8E00660740 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E350CF13D22F7500FE69E3 /* Foundation.framework */; };
+		EED46EE813D38B8E00660740 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E350D113D22F7500FE69E3 /* CoreGraphics.framework */; };
+		EED46EE913D38B8E00660740 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E3511513D23C0C00FE69E3 /* AVFoundation.framework */; };
+		EED46EEA13D38B8E00660740 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E3511613D23C0C00FE69E3 /* QuartzCore.framework */; };
+		EED46EEB13D38B8E00660740 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E3511713D23C0C00FE69E3 /* MediaPlayer.framework */; };
+		EED46EEC13D38B8E00660740 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E3511813D23C0C00FE69E3 /* CoreMedia.framework */; };
+		EED46EED13D38B8E00660740 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E3511913D23C0C00FE69E3 /* CoreVideo.framework */; };
+		EED46EEE13D38B8E00660740 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E3511A13D23C0C00FE69E3 /* MobileCoreServices.framework */; };
+		EED46EEF13D38B8E00660740 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E3511B13D23C0C00FE69E3 /* AssetsLibrary.framework */; };
+		EED46EF013D38B8E00660740 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E3511C13D23C0C00FE69E3 /* ImageIO.framework */; };
+		EED46EF113D38B8E00660740 /* libopencv_calib3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EB9D13D3694800F73A5D /* libopencv_calib3d.a */; };
+		EED46EF213D38B8E00660740 /* libopencv_contrib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EB9E13D3694800F73A5D /* libopencv_contrib.a */; };
+		EED46EF313D38B8E00660740 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EB9F13D3694800F73A5D /* libopencv_core.a */; };
+		EED46EF413D38B8E00660740 /* libopencv_features2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA013D3694800F73A5D /* libopencv_features2d.a */; };
+		EED46EF513D38B8E00660740 /* libopencv_flann.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA113D3694800F73A5D /* libopencv_flann.a */; };
+		EED46EF613D38B8E00660740 /* libopencv_haartraining_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA213D3694800F73A5D /* libopencv_haartraining_engine.a */; };
+		EED46EF713D38B8E00660740 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA313D3694800F73A5D /* libopencv_imgproc.a */; };
+		EED46EF813D38B8E00660740 /* libopencv_lapack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA413D3694800F73A5D /* libopencv_lapack.a */; };
+		EED46EF913D38B8E00660740 /* libopencv_legacy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA513D3694800F73A5D /* libopencv_legacy.a */; };
+		EED46EFA13D38B8E00660740 /* libopencv_ml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA613D3694800F73A5D /* libopencv_ml.a */; };
+		EED46EFB13D38B8E00660740 /* libopencv_objdetect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA713D3694800F73A5D /* libopencv_objdetect.a */; };
+		EED46EFC13D38B8E00660740 /* libopencv_video.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA813D3694800F73A5D /* libopencv_video.a */; };
+		EED46EFD13D38B8E00660740 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C956EBA913D3694800F73A5D /* libzlib.a */; };
+		EED46EFF13D38B8E00660740 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9E350D613D22F7500FE69E3 /* InfoPlist.strings */; };
+		EED46F0013D38B8E00660740 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E350DF13D22F7500FE69E3 /* MainWindow.xib */; };
+		EED46F0113D38B8E00660740 /* SwatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E350E513D22F7500FE69E3 /* SwatViewController.xib */; };
+		EED46F0213D38B8E00660740 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E3513813D262AA00FE69E3 /* star.png */; };
+		EED46F0A13D38BC000660740 /* Swat-copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EED46F0913D38BC000660740 /* Swat-copy-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +195,8 @@
 		C9E3513813D262AA00FE69E3 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		EE898D1F13D3823600C9D4D3 /* MoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
 		EE898D2013D3823600C9D4D3 /* MoveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveView.m; sourceTree = "<group>"; };
+		EED46F0613D38B8E00660740 /* Swat copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swat copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED46F0913D38BC000660740 /* Swat-copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Swat-copy-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +239,38 @@
 				C9E350EE13D22F7500FE69E3 /* UIKit.framework in Frameworks */,
 				C9E350EF13D22F7500FE69E3 /* Foundation.framework in Frameworks */,
 				C9E350F013D22F7500FE69E3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED46EE413D38B8E00660740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED46EE513D38B8E00660740 /* Accelerate.framework in Frameworks */,
+				EED46EE613D38B8E00660740 /* UIKit.framework in Frameworks */,
+				EED46EE713D38B8E00660740 /* Foundation.framework in Frameworks */,
+				EED46EE813D38B8E00660740 /* CoreGraphics.framework in Frameworks */,
+				EED46EE913D38B8E00660740 /* AVFoundation.framework in Frameworks */,
+				EED46EEA13D38B8E00660740 /* QuartzCore.framework in Frameworks */,
+				EED46EEB13D38B8E00660740 /* MediaPlayer.framework in Frameworks */,
+				EED46EEC13D38B8E00660740 /* CoreMedia.framework in Frameworks */,
+				EED46EED13D38B8E00660740 /* CoreVideo.framework in Frameworks */,
+				EED46EEE13D38B8E00660740 /* MobileCoreServices.framework in Frameworks */,
+				EED46EEF13D38B8E00660740 /* AssetsLibrary.framework in Frameworks */,
+				EED46EF013D38B8E00660740 /* ImageIO.framework in Frameworks */,
+				EED46EF113D38B8E00660740 /* libopencv_calib3d.a in Frameworks */,
+				EED46EF213D38B8E00660740 /* libopencv_contrib.a in Frameworks */,
+				EED46EF313D38B8E00660740 /* libopencv_core.a in Frameworks */,
+				EED46EF413D38B8E00660740 /* libopencv_features2d.a in Frameworks */,
+				EED46EF513D38B8E00660740 /* libopencv_flann.a in Frameworks */,
+				EED46EF613D38B8E00660740 /* libopencv_haartraining_engine.a in Frameworks */,
+				EED46EF713D38B8E00660740 /* libopencv_imgproc.a in Frameworks */,
+				EED46EF813D38B8E00660740 /* libopencv_lapack.a in Frameworks */,
+				EED46EF913D38B8E00660740 /* libopencv_legacy.a in Frameworks */,
+				EED46EFA13D38B8E00660740 /* libopencv_ml.a in Frameworks */,
+				EED46EFB13D38B8E00660740 /* libopencv_objdetect.a in Frameworks */,
+				EED46EFC13D38B8E00660740 /* libopencv_video.a in Frameworks */,
+				EED46EFD13D38B8E00660740 /* libzlib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +447,7 @@
 			children = (
 				C9E350C913D22F7500FE69E3 /* Swat.app */,
 				C9E350ED13D22F7500FE69E3 /* SwatTests.octest */,
+				EED46F0613D38B8E00660740 /* Swat copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -426,6 +498,7 @@
 			children = (
 				C9E3513813D262AA00FE69E3 /* star.png */,
 				C9E350D513D22F7500FE69E3 /* Swat-Info.plist */,
+				EED46F0913D38BC000660740 /* Swat-copy-Info.plist */,
 				C9E350D613D22F7500FE69E3 /* InfoPlist.strings */,
 				C9E350D913D22F7500FE69E3 /* Swat-Prefix.pch */,
 				C9E350DA13D22F7500FE69E3 /* main.m */,
@@ -492,6 +565,23 @@
 			productReference = C9E350ED13D22F7500FE69E3 /* SwatTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		EED46EDB13D38B8E00660740 /* Swat copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED46F0313D38B8E00660740 /* Build configuration list for PBXNativeTarget "Swat copy" */;
+			buildPhases = (
+				EED46EDC13D38B8E00660740 /* Sources */,
+				EED46EE413D38B8E00660740 /* Frameworks */,
+				EED46EFE13D38B8E00660740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swat copy";
+			productName = Swat;
+			productReference = EED46F0613D38B8E00660740 /* Swat copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -511,6 +601,7 @@
 			targets = (
 				C9E350C813D22F7500FE69E3 /* Swat */,
 				C9E350EC13D22F7500FE69E3 /* SwatTests */,
+				EED46EDB13D38B8E00660740 /* Swat copy */,
 			);
 		};
 /* End PBXProject section */
@@ -533,6 +624,18 @@
 			files = (
 				C9E350F813D22F7500FE69E3 /* InfoPlist.strings in Resources */,
 				C9E350FB13D22F7500FE69E3 /* SwatTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED46EFE13D38B8E00660740 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED46EFF13D38B8E00660740 /* InfoPlist.strings in Resources */,
+				EED46F0013D38B8E00660740 /* MainWindow.xib in Resources */,
+				EED46F0113D38B8E00660740 /* SwatViewController.xib in Resources */,
+				EED46F0213D38B8E00660740 /* star.png in Resources */,
+				EED46F0A13D38BC000660740 /* Swat-copy-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +677,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9E350FD13D22F7500FE69E3 /* SwatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED46EDC13D38B8E00660740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED46EDD13D38B8E00660740 /* main.m in Sources */,
+				EED46EDE13D38B8E00660740 /* SwatAppDelegate.m in Sources */,
+				EED46EDF13D38B8E00660740 /* SwatViewController.m in Sources */,
+				EED46EE013D38B8E00660740 /* AVCamCaptureManager.m in Sources */,
+				EED46EE113D38B8E00660740 /* AVCamUtilities.m in Sources */,
+				EED46EE213D38B8E00660740 /* FrameProcessor.mm in Sources */,
+				EED46EE313D38B8E00660740 /* MoveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +864,48 @@
 			};
 			name = Release;
 		};
+		EED46F0413D38B8E00660740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swat/Swat-Prefix.pch";
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = "Swat/Swat-copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Swat/OpenCV\"",
+				);
+				PRODUCT_NAME = "Swat copy";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EED46F0513D38B8E00660740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swat/Swat-Prefix.pch";
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = "Swat/Swat-copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Swat/OpenCV\"",
+				);
+				PRODUCT_NAME = "Swat copy";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -773,6 +932,15 @@
 			buildConfigurations = (
 				C9E3510413D22F7500FE69E3 /* Debug */,
 				C9E3510513D22F7500FE69E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED46F0313D38B8E00660740 /* Build configuration list for PBXNativeTarget "Swat copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED46F0413D38B8E00660740 /* Debug */,
+				EED46F0513D38B8E00660740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

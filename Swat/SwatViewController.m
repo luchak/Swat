@@ -235,7 +235,7 @@
 	CGFloat targetX, targetY;
 	NSMutableArray *removers = [NSMutableArray arrayWithCapacity:2];
 	for (MoveView *view in self.views) {
-		if (CGRectContainsRect(self.view.frame, view.frame)) {
+//		if (CGRectContainsRect(self.view.frame, view.frame)) {
 			switch (direction) {
 				case UISwipeGestureRecognizerDirectionUp:
 					targetX = view.center.x;
@@ -266,7 +266,8 @@
 					break;
 			}
 			
-		} else {
+//		} else {
+		if (!(CGRectIntersectsRect(self.view.frame, view.frame))) {
 			[removers addObject:view];
 		}
 	}
@@ -295,9 +296,9 @@
 }
 
 - (void) catchMovement:(NSNotification *)notification {
-	if ([[notification name] isEqualToString:@"SwatLeft"]) {
+	if ([[notification name] isEqualToString:@"SwatRight"]) {
 		[self moveViews:self.view.center direction:UISwipeGestureRecognizerDirectionLeft];
-	} else if ([[notification name] isEqualToString:@"SwatRight"]) {
+	} else if ([[notification name] isEqualToString:@"SwatLeft"]) {
 		[self moveViews:self.view.center direction:UISwipeGestureRecognizerDirectionRight];
 	}
 }

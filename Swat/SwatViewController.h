@@ -11,11 +11,11 @@
 #import "MoveView.h"
 
 
-#define CREATION_INTERVAL		1.1
+#define CREATION_INTERVAL		0.8
 #define MIN_SIZE				50
 #define MAX_SIZE				100
 #define SCREEN_CROSSING_TIME	6.0
-#define STEP_INTERVAL			0.085
+#define STEP_INTERVAL			0.045
 
 
 
