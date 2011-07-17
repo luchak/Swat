@@ -339,7 +339,7 @@
     float net = -left + right;
     
     const int suppress_frames = 5;
-    const float kGamma = 0.9;
+    const float kGamma = 0.7;
     const float kThreshold = 1.0;
     const float kRatio = 2.0;
     float new_left_accum = left_accum * kGamma + left * (1.0 - kGamma);
@@ -350,19 +350,20 @@
     bool trig_right = false;
     bool trig_total = false;
     if (suppress_counter == 0) {
-        if (new_left_accum > kThreshold && left_accum <= kThreshold) {
-            trig_left = true;
-            new_left_accum = 0.0;
-            suppress_counter = suppress_frames;
-        }
-        if (new_right_accum > kThreshold && right_accum <= kThreshold) {
-            trig_right = true;
-            new_right_accum = 0.0;
-            suppress_counter = suppress_frames;
-        }
+//        if (new_left_accum > kThreshold && left_accum <= kThreshold) {
+//            trig_left = true;
+//            new_left_accum = 0.0;
+//            suppress_counter = suppress_frames;
+//        }
+//        if (new_right_accum > kThreshold && right_accum <= kThreshold) {
+//            trig_right = true;
+//            new_right_accum = 0.0;
+//            suppress_counter = suppress_frames;
+//        }
         if (fabs(new_total_accum) > kThreshold && fabs(total_accum) <= kThreshold) {
+            NSLog(@"%f %f", total_accum, new_total_accum);
+
             trig_total = true;
-            new_total_accum = 0.0;
             suppress_counter = suppress_frames;
         }
     } else {
@@ -384,15 +385,18 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"SwatLeft" object:nil];
         NSLog(@"left!");
         NSLog(@"%f %f", total_accum, new_total_accum);
+                    new_total_accum = 0.0;
     } else if (trig_total && new_total_accum > 0.0) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"SwatRight" object:nil];
         NSLog(@"right!");
         NSLog(@"%f %f", total_accum, new_total_accum);
+                    new_total_accum = 0.0;
 
     }
     
     left_accum = new_left_accum;
     right_accum = new_right_accum;
+    total_accum = new_total_accum;
     
     delete[] corners_old;
     delete[] corners_new;
