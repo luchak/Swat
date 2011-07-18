@@ -73,6 +73,8 @@
 	
 	self.views = [NSMutableArray array];
     
+	
+	// COMMENT THIS STUFF OUT IF YOU WANT TO SEE THE UNDER-THE-COVERS VIEW
 	CGFloat timeMod = STEP_INTERVAL;
 	DX = ([UIScreen mainScreen].bounds.size.width + 2.0 * MAX_SIZE) * timeMod * .1;
 	DY = ([UIScreen mainScreen].bounds.size.height + 2.0 * MAX_SIZE) * timeMod * .1;
@@ -83,9 +85,10 @@
 	[NSTimer scheduledTimerWithTimeInterval:STEP_INTERVAL target:self 
 								   selector:@selector(movementTimer:) userInfo:nil repeats:YES];
 	
-	// 
+	// Notification center
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(catchMovement:) name:@"SwatLeft" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(catchMovement:) name:@"SwatRight" object:nil];
+	// END COMMENTING
     
     [super viewDidLoad];
 }
