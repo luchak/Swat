@@ -342,24 +342,11 @@
     const float kGamma = 0.7;
     const float kThreshold = 1.0;
     const float kRatio = 2.0;
-    float new_left_accum = left_accum * kGamma + left * (1.0 - kGamma);
-    float new_right_accum = right_accum * kGamma + right * (1.0 - kGamma);
+
     float new_total_accum = total_accum * kGamma + net * (1.0 - kGamma);
-    
-    bool trig_left = false;
-    bool trig_right = false;
+
     bool trig_total = false;
     if (suppress_counter == 0) {
-//        if (new_left_accum > kThreshold && left_accum <= kThreshold) {
-//            trig_left = true;
-//            new_left_accum = 0.0;
-//            suppress_counter = suppress_frames;
-//        }
-//        if (new_right_accum > kThreshold && right_accum <= kThreshold) {
-//            trig_right = true;
-//            new_right_accum = 0.0;
-//            suppress_counter = suppress_frames;
-//        }
         if (fabs(new_total_accum) > kThreshold && fabs(total_accum) <= kThreshold) {
             NSLog(@"%f %f", total_accum, new_total_accum);
 
@@ -369,18 +356,7 @@
     } else {
         suppress_counter -= 1;
     }
-    
-#if 0
-    if (trig_left && (!trig_right || (new_left_accum > new_right_accum))) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"SwatLeft" object:nil];
-        NSLog(@"left!");
-        NSLog(@"%f %f :: %f %f", left_accum, new_left_accum, right_accum, new_right_accum);
-    } else if (trig_right && (!trig_left || (new_right_accum >= new_left_accum))) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"SwatRight" object:nil];
-        NSLog(@"right!");
-        NSLog(@"%f %f :: %f %f", left_accum, new_left_accum, right_accum, new_right_accum);
-    }
-#endif
+
     if (trig_total && new_total_accum < 0.0) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"SwatLeft" object:nil];
         NSLog(@"left!");
@@ -394,8 +370,6 @@
 
     }
     
-    left_accum = new_left_accum;
-    right_accum = new_right_accum;
     total_accum = new_total_accum;
     
     delete[] corners_old;
