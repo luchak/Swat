@@ -1,0 +1,13 @@
+A sample app showing you how to control your applications without touching your
+iOS device.
+
+Uses OpenCV (build included) to run an optical flow analysis between frames,
+which finds frame-to-frame feature correspondences. Consistent left-to-right or
+right-to-left motion between consecutive frames causes a notification to fire.
+
+TODO:
+- expose key code as a gesture recognizer
+- improve performance (currently good on iPad 2, not so hot on iPhone)
+- improve recognition accuracy (objects entering / leaving the frame are a big
+  problem)
+- add 2-clause BSD license notice to files
