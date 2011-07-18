@@ -5,6 +5,10 @@ Uses OpenCV (build included) to run an optical flow analysis between frames,
 which finds frame-to-frame feature correspondences. Consistent left-to-right or
 right-to-left motion between consecutive frames causes a notification to fire.
 
+If you are having trouble: the recognizer currently has big problems with both global motion (where your iPad is moving) and with objects (like your hands) entering / leaving the frame. I have plans for dealing with both of these things, but, for now, try propping your iPad up on something and gesturing by moving your hand from the center of your chest to one side.
+
+This code has only been tested on an iPhone 4 and an iPad 2. It runs too slowly to be useful on the iPhone, but the iPad 2 ran it just fine.
+
 TODO:
 - expose key code as a gesture recognizer
 - improve performance (currently good on iPad 2, not so hot on iPhone)
